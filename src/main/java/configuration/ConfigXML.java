@@ -80,7 +80,8 @@ public class ConfigXML {
 			  doc.getDocumentElement().normalize();
 
 			  NodeList list = doc.getElementsByTagName("config");
-			  Element config = (Element) list.item(0); // list.item(0) is a Node that is an Element
+			  // list.item(0) is a Node that is an Element
+			  Element config = (Element) list.item(0); 
 
 			  
 				//Two possible values: true (no instance of RemoteServer needs to be launched) or false (RemoteServer needs to be run first)
@@ -94,10 +95,6 @@ public class ConfigXML {
 			  businessLogicName = getTagValue("businessLogicName", config);
 			  
 			  locale = getTagValue("locale", config);
-
-			  
-			  
-				
 
 			  dbFilename = getTagValue("dbFilename", config);
 

@@ -46,38 +46,32 @@ public class AdminGUI extends JFrame {
 		jLabelSelectOption.setHorizontalAlignment(SwingConstants.CENTER);
 
 		jButtonDeskontu = new JButton();
-		jButtonDeskontu.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JFrame a = new DeskontuaGUI(username);
-				a.setVisible(true);
-			}
+		jButtonDeskontu.addActionListener(e -> {
+		    JFrame a = new DeskontuaGUI(username);
+		    a.setVisible(true);
 		});
+
 		jButtonDeskontu.setText(ResourceBundle.getBundle("Etiquetas").getString("AdminGUI.Deskontua"));
 
 		jButtonkude = new JButton();
-		jButtonkude.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JFrame a = new DeskontuKudeatuGUI(username);
-				a.setVisible(true);
-			}
+		jButtonkude.addActionListener(e -> {
+		    JFrame a = new DeskontuKudeatuGUI(username);
+		    a.setVisible(true);
 		});
+
 		jButtonkude.setText(ResourceBundle.getBundle("Etiquetas").getString("AdminGUI.Kudea"));
 
 		jButtonEzabatu = new JButton();
 		jButtonEzabatu.setText(ResourceBundle.getBundle("Etiquetas").getString("AdminGUI.Ezab"));
-		jButtonEzabatu.addActionListener(new java.awt.event.ActionListener() {
-			public void actionPerformed(java.awt.event.ActionEvent e) {
-				JFrame a = new EzabatuGUI();
-				a.setVisible(true);
-			}
+		jButtonEzabatu.addActionListener(e -> {
+		    JFrame a = new EzabatuGUI();
+		    a.setVisible(true);
 		});
 
+
 		jButtonItxi = new JButton();
-		jButtonItxi.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				jButtonClose_actionPerformed(e);
-			}
-		});
+		jButtonItxi.addActionListener(e -> jButtonCloseActionPerformed());
+
 		jButtonItxi.setText(ResourceBundle.getBundle("Etiquetas").getString("EgoeraGUI.Close"));
 
 		jContentPane = new JPanel();
@@ -92,7 +86,7 @@ public class AdminGUI extends JFrame {
 
 	}
 
-	private void jButtonClose_actionPerformed(ActionEvent e) {
+	private void jButtonCloseActionPerformed() {
 		this.setVisible(false);
 	}
 

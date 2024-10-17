@@ -74,7 +74,7 @@ public class AlertaSortuGUI extends JFrame {
 		jButtonCreate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				jLabelMsg.setText("");
-				String error = field_Errors();
+				String error = fieldErrors();
 				if (error != null)
 					jLabelMsg.setText(error);
 				else {
@@ -92,7 +92,7 @@ public class AlertaSortuGUI extends JFrame {
 							traveler.addAlert(newAlert);
 							JFrame a = new AlertakKudeatuGUI(username);
 							a.setVisible(true);
-							jButtonClose_actionPerformed(e);
+							jButtonCloseActionPerformed();
 						} else {
 							jLabelMsg.setText(
 									ResourceBundle.getBundle("Etiquetas").getString("AlertGUI.AlertCreateFail"));
@@ -106,7 +106,7 @@ public class AlertaSortuGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				JFrame a = new AlertakKudeatuGUI(username);
 				a.setVisible(true);
-				jButtonClose_actionPerformed(e);
+				jButtonCloseActionPerformed();
 			}
 		});
 
@@ -181,11 +181,11 @@ public class AlertaSortuGUI extends JFrame {
 
 	}
 
-	private void jButtonClose_actionPerformed(ActionEvent e) {
+	private void jButtonCloseActionPerformed() {
 		this.setVisible(false);
 	}
 
-	private String field_Errors() {
+	private String fieldErrors() {
 		try {
 			if ((fieldOrigin.getText().length() == 0) || (fieldDestination.getText().length() == 0))
 				return ResourceBundle.getBundle("Etiquetas").getString("CreateRideGUI.ErrorQuery");

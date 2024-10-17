@@ -297,6 +297,4 @@ public class CreateRideBDWhiteTest {
 		        }
 		   }
 		   
-	@Test
-	public void test6() {}  
 }

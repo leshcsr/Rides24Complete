@@ -3,7 +3,6 @@ package gui;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
 import java.util.Date;
 import java.util.ResourceBundle;
 
@@ -53,7 +52,7 @@ public class ArazoaGUI extends JFrame{
 		jButtonJun.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				appFacadeInterface.erreklamazioaBidali(nori, nork, gaur, booking, "Ez da agertu",false);
-				jButtonClose_actionPerformed(e);
+				jButtonCloseActionPerformed();
 			}
 		});
 		
@@ -64,7 +63,7 @@ public class ArazoaGUI extends JFrame{
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new ErreklamazioakGUI(nork, nori, booking);
 				a.setVisible(true);
-				jButtonClose_actionPerformed(e);
+				jButtonCloseActionPerformed();
 			}
 		});
 		
@@ -78,7 +77,7 @@ public class ArazoaGUI extends JFrame{
 	}
 	
 
-	private void jButtonClose_actionPerformed(ActionEvent e) {
+	private void jButtonCloseActionPerformed() {
 		this.setVisible(false);
 	}
 }

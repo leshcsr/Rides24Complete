@@ -35,8 +35,8 @@ public class ApplicationLauncher {
 				appFacadeInterface = new BLFacadeImplementation(da);
 
 			}
-
-			else { // If remote
+			// If remote
+			else { 
 
 				String serviceName = "http://" + c.getBusinessLogicNode() + ":" + c.getBusinessLogicPort() + "/ws/"
 						+ c.getBusinessLogicName() + "?wsdl";
@@ -57,12 +57,9 @@ public class ApplicationLauncher {
 			a.setVisible(true);
 
 		} catch (Exception e) {
-			// a.jLabelSelectOption.setText("Error: "+e.toString());
-			// a.jLabelSelectOption.setForeground(Color.RED);
 
 			System.out.println("Error in ApplicationLauncher: " + e.toString());
 		}
-		// a.pack();
 
 	}
 

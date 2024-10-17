@@ -252,7 +252,8 @@ public class BookGUI extends JFrame {
 						txtDesk.setText("");
 						lbldekera.setText("");
 						tableModelRides.setDataVector(null, columnNamesRides);
-						tableModelRides.setColumnCount(5); // another column added to allocate ride objects
+						// another column added to allocate ride objects
+						tableModelRides.setColumnCount(5); 
 
 						BLFacade facade = MainGUI.getBusinessLogic();
 						List<domain.Ride> rides = facade.getRides((String) jComboBoxOrigin.getSelectedItem(),
@@ -271,7 +272,8 @@ public class BookGUI extends JFrame {
 							row.add(ride.getPrice());
 							row.add(decimalFormat
 									.format(ride.getDriver().getBalorazioa() / ride.getDriver().getBalkop()));
-							row.add(ride); // ev object added in order to obtain it with
+							// ev object added in order to obtain it with
+							row.add(ride); 
 											// tableModelEvents.getValueAt(i,4)
 							tableModelRides.addRow(row);
 						}
@@ -448,7 +450,6 @@ public class BookGUI extends JFrame {
 			// That number of components is calculated with "offset" and is different in
 			// English and Spanish
 			// Component o=(Component)
-			// jCalendar.getDayChooser().getDayPanel().getComponent(i+offset);;
 			Component o = (Component) jCalendar.getDayChooser().getDayPanel()
 					.getComponent(calendar.get(Calendar.DAY_OF_MONTH) + offset);
 			o.setBackground(color);

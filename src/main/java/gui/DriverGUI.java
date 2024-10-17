@@ -1,5 +1,5 @@
 package gui;
-
+import java.util.ResourceBundle;
 import javax.swing.*;
 import businessLogic.BLFacade;
 import java.awt.Color;
@@ -12,6 +12,7 @@ import java.awt.event.ActionEvent;
 public class DriverGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
+    private static final String etiquetas = "Etiquetas";
 
 	private JPanel jContentPane = null;
 	private JButton jButtonCreateQuery = null;
@@ -20,7 +21,7 @@ public class DriverGUI extends JFrame {
 	private JButton jButtonBidaiak = null;
 	private JButton jButtonKotxeak = null;
 	private JButton jButtonBezeroa = null;
-	private JButton jButtonClose = new JButton(ResourceBundle.getBundle("Etiquetas").getString("Close"));
+	private JButton jButtonClose = new JButton(ResourceBundle.getBundle(etiquetas).getString("Close"));
 	protected JLabel jLabelSelectOption;
 	private JPanel panel;
 
@@ -42,7 +43,7 @@ public class DriverGUI extends JFrame {
 		DriverGUI.setBussinessLogic(LoginGUI.getBusinessLogic());
 
 		this.setSize(600, 400);
-		jLabelSelectOption = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("DriverGUI.Driver"));
+		jLabelSelectOption = new JLabel(ResourceBundle.getBundle(etiquetas).getString("DriverGUI.Driver"));
 		jLabelSelectOption.setBounds(180, 11, 240, 36);
 		jLabelSelectOption.setFont(new Font("Tahoma", Font.BOLD, 13));
 		jLabelSelectOption.setForeground(Color.BLACK);
@@ -53,7 +54,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonCreateQuery = new JButton();
 		jButtonCreateQuery.setBounds(40, 70, 240, 50);
-		jButtonCreateQuery.setText(ResourceBundle.getBundle("Etiquetas").getString("DriverGUI.CreateRide"));
+		jButtonCreateQuery.setText(ResourceBundle.getBundle(etiquetas).getString("DriverGUI.CreateRide"));
 		jButtonCreateQuery.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new CreateRideGUI(username);
@@ -63,7 +64,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonDiruaKudeatu = new JButton();
 		jButtonDiruaKudeatu.setBounds(40, 150, 240, 50);
-		jButtonDiruaKudeatu.setText(ResourceBundle.getBundle("Etiquetas").getString("UserGUI.ManageMoney"));
+		jButtonDiruaKudeatu.setText(ResourceBundle.getBundle(etiquetas).getString("UserGUI.ManageMoney"));
 		jButtonDiruaKudeatu.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new MoneyGUI(username);
@@ -73,7 +74,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonErreserbak = new JButton();
 		jButtonErreserbak.setBounds(320, 150, 240, 50);
-		jButtonErreserbak.setText(ResourceBundle.getBundle("Etiquetas").getString("TravelerGUI.BookManager"));
+		jButtonErreserbak.setText(ResourceBundle.getBundle(etiquetas).getString("TravelerGUI.BookManager"));
 		jButtonErreserbak.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new ErreserbaOnartuGUI(username);
@@ -83,7 +84,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonBidaiak = new JButton();
 		jButtonBidaiak.setBounds(320, 70, 240, 50);
-		jButtonBidaiak.setText(ResourceBundle.getBundle("Etiquetas").getString("DriverGUI.RideManager"));
+		jButtonBidaiak.setText(ResourceBundle.getBundle(etiquetas).getString("DriverGUI.RideManager"));
 		jButtonBidaiak.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new BidaiakKudeatuGUI(username);
@@ -93,7 +94,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonKotxeak = new JButton();
 		jButtonKotxeak.setBounds(320, 230, 240, 50);
-		jButtonKotxeak.setText(ResourceBundle.getBundle("Etiquetas").getString("KotxeaGUI.CarManager"));
+		jButtonKotxeak.setText(ResourceBundle.getBundle(etiquetas).getString("KotxeaGUI.CarManager"));
 		jButtonKotxeak.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new KotxeakKudeatuGUI(username);
@@ -103,7 +104,7 @@ public class DriverGUI extends JFrame {
 
 		jButtonBezeroa = new JButton();
 		jButtonBezeroa.setBounds(40, 230, 240, 50);
-		jButtonBezeroa.setText(ResourceBundle.getBundle("Etiquetas").getString("BezeroGUI.Bezeroak"));
+		jButtonBezeroa.setText(ResourceBundle.getBundle(etiquetas).getString("BezeroGUI.Bezeroak"));
 		jButtonBezeroa.addActionListener(new java.awt.event.ActionListener() {
 			public void actionPerformed(java.awt.event.ActionEvent e) {
 				JFrame a = new BezeroGUI(username);
@@ -130,7 +131,7 @@ public class DriverGUI extends JFrame {
 		jContentPane.add(jButtonClose);
 
 		setContentPane(jContentPane);
-		setTitle(ResourceBundle.getBundle("Etiquetas").getString("RegisterGUI.Driver"));
+		setTitle(ResourceBundle.getBundle(etiquetas).getString("RegisterGUI.Driver"));
 
 		setResizable(false);
 
