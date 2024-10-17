@@ -1,0 +1,96 @@
+
+SbusinessLogic.BLFacadeImplementation#getAllMovements(Ldomain/User;)Ljava/util/List;f
+ZC:/Users/lesli/git/Rides24Complete/src/main/java/businessLogic/BLFacadeImplementation.javaÕ Õ(&"startingBlock*‚
+startingBlock
+Õ& Õ(1ˆ
+…
+
+Ô Ô(
+
+%6"
+__annotate*2
+
+__unknown_file (
+java.lang.Override*1
+
+__unknown_file (
+
+userdomain.UserU
+S
+
+Õ, Õ(0
+userdomain.User"__annotation*"
+
+__unknown_file (
+
+%6*
+1*³
+1
+Ö Ö(‡
+„
+
+Ö Ö(
+%0dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager|z
+
+Ö Ö(
+
+%1void"dataAccess.DataAccess#open()V*9
+
+__unknown_file (
+
+%0dataAccess.DataAccess2open()‡
+„
+
+× ×("
+%2dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManagerùö
+
+× ×(8
+%3java.util.List"DdataAccess.DataAccess#getAllMovements(Ldomain/User;)Ljava/util/List;*9
+
+__unknown_file (
+
+%2dataAccess.DataAccess*1
+
+__unknown_file (
+
+userdomain.User2getAllMovements(Ldomain/User;)a
+_
+
+× ×(9
+movesjava.util.List"__id*2
+
+__unknown_file (
+
+%3java.util.List‡
+„
+
+Ø Ø(
+%4dataAccess.DataAccess"__id*S
+
+__unknown_file (7*5&
+$businessLogic.BLFacadeImplementation"
+	dbManager~|
+
+Ø Ø(
+
+%5void"dataAccess.DataAccess#close()V*9
+
+__unknown_file (
+
+%4dataAccess.DataAccess2close()"'
+
+Ù Ù(
+
+movesjava.util.List:!
+
+Õ' Õ(0
+userdomain.UserB(&
+$businessLogic.BLFacadeImplementationH

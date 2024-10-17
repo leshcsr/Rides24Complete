@@ -1,0 +1,92 @@
+
+=domain.Driver#bilatumatrikula(Ljava/lang/String;)Ldomain/Car;M
+CC:/Users/lesli/git/Rides24Complete/src/main/java/domain/Driver.javaq q("5*÷
+2w w(a
+_
+w w(
+%4java.util.List"__id*7
+
+__unknown_file (*
+domain.Driver"
+carsÉ
+Ä
+w w(
+%5
+domain.Car"
+__arrayGet*2
+
+__unknown_file (
+
+%4java.util.List*"
+
+__unknown_file (
+""V
+T
+w w(
+kotx
+domain.Car"__id*.
+
+__unknown_file (
+
+%5
+domain.Car*
+3
+1*Ó
+3v v(a
+_
+v v(
+%0java.util.List"__id*7
+
+__unknown_file (*
+domain.Driver"
+carsÉ
+Ä
+v v(
+%1
+domain.Car"
+__arrayGet*2
+
+__unknown_file (
+
+%0java.util.List*"
+
+__unknown_file (
+""íè
+v v(#
+%2java.lang.String"+domain.Car#getMatrikula()Ljava/lang/String;*.
+
+__unknown_file (
+
+%1
+domain.Car2getMatrikula()’“
+v v(1
+%3boolean",java.lang.String#equals(Ljava/lang/Object;)Z*4
+
+__unknown_file (
+
+%2java.lang.String*7
+
+__unknown_file (
+
+matrijava.lang.String2equals(Ljava/lang/Object;)*	
+2
+3
+1*a
+5r r(J
+H
+s s(
+kotx
+domain.Car"__id*"
+
+__unknown_file (
+""*
+3
+1*/
+1{	 {(" 
+{ {(
+
+kotx
+domain.Car:%
+q q((
+matrijava.lang.StringB
+domain.DriverH

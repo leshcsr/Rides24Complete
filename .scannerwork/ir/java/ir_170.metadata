@@ -1,0 +1,6 @@
+businessLogic.BLFacadeImplementation#<init>()V
+513fae40d67bbf38c900b2e0c37f6c28
+dataAccess.DataAccess#instance-init#
+dataAccess.DataAccess#<init>()V
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V

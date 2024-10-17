@@ -1,0 +1,7 @@
+domain.Driver#doesRideExists(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Z
+c6fb9b3809d56ad17f0536eccf4713e5
+java.util.Objects#equals(Ljava/lang/Object;Ljava/lang/Object;)Z
+==
+getDate domain.Ride#getDate()Ljava/util/Date;
+getFrom domain.Ride#getFrom()Ljava/lang/String;
+getTo domain.Ride#getTo()Ljava/lang/String;

@@ -1,0 +1,6 @@
+businessLogic.BLFacadeImplementation#deleteCar(Ldomain/Car;)V
+b7fd32fd1a7199fafac89cb86604882d
+==
+close dataAccess.DataAccess#close()V
+deleteCar dataAccess.DataAccess#deleteCar(Ldomain/Car;)V
+open dataAccess.DataAccess#open()V

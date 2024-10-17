@@ -1,0 +1,6 @@
+businessLogic.BLFacadeImplementation#getRidesByDriver(Ljava/lang/String;)Ljava/util/List;
+14079efd4269ced4132c5766ea32152c
+==
+close dataAccess.DataAccess#close()V
+open dataAccess.DataAccess#open()V
+getRidesByDriver dataAccess.DataAccess#getRidesByDriver(Ljava/lang/String;)Ljava/util/List;

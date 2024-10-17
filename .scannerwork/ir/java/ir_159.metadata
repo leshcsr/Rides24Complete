@@ -1,0 +1,4 @@
+exceptions.RideAlreadyExistException#<init>(Ljava/lang/String;)V
+a29bee9b116cf42d3b2056ec66d06d1d
+==
+<init> java.lang.Exception#<init>(Ljava/lang/String;)V

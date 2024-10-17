@@ -1,0 +1,3 @@
+domain.IntegerAdapter#unmarshal(Ljava/lang/String;)Ljava/lang/Integer;
+8b401f42a2b0d54063a0b941290c8a42
+java.lang.Integer#parseInt(Ljava/lang/String;)I

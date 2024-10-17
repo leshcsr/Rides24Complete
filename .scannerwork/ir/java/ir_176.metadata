@@ -1,0 +1,6 @@
+businessLogic.BLFacadeImplementation#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+815da758aadba1d217ba7cccb3035e3f
+==
+getThisMonthDatesWithRides dataAccess.DataAccess#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+close dataAccess.DataAccess#close()V
+open dataAccess.DataAccess#open()V

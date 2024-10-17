@@ -1,0 +1,6 @@
+businessLogic.BLFacadeImplementation#createRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IFLjava/lang/String;)Ldomain/Ride;
+c3db17d5c416f77c315142a5641cbc4f
+==
+close dataAccess.DataAccess#close()V
+open dataAccess.DataAccess#open()V
+createRide dataAccess.DataAccess#createRide(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;IFLjava/lang/String;)Ldomain/Ride;

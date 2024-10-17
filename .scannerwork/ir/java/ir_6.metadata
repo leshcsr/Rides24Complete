@@ -1,0 +1,9 @@
+dataAccess.DataAccess#getThisMonthDatesWithRides(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;)Ljava/util/List;
+5db998f14400be5a3e2a579ab20fb7ce
+java.util.ArrayList#<init>()V
+configuration.UtilDate#firstDayMonth(Ljava/util/Date;)Ljava/util/Date;
+java.util.ArrayList#instance-init#
+configuration.UtilDate#lastDayMonth(Ljava/util/Date;)Ljava/util/Date;
+==
+addAll java.util.List#addAll(Ljava/util/Collection;)Z
+println java.io.PrintStream#println(Ljava/lang/String;)V
